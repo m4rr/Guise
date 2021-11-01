@@ -15,6 +15,5 @@ let package = Package(
         .target(name: "guise", dependencies: [ "GuiseFramework" ]),
         .target(name: "GuiseFramework", dependencies: ["Commandant", "SourceKittenFramework"]),
         .testTarget(name: "GuiseFrameworkTests", dependencies: ["GuiseFramework"])
-    ],
-    
+    ]
 )
