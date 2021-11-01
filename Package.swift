@@ -12,7 +12,7 @@ let package = Package(
         .package(url: "https://github.com/jpsim/SourceKitten.git", from: "0.21.1")
     ],
     targets: [
-        .binaryTarget(name: "guise", dependencies: [ "GuiseFramework" ]),
+        .target(name: "guise", dependencies: [ "GuiseFramework" ]),
         .target(name: "GuiseFramework", dependencies: ["Commandant", "SourceKittenFramework"]),
         .testTarget(name: "GuiseFrameworkTests", dependencies: ["GuiseFramework"])
     ],
